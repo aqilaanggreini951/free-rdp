@@ -16,8 +16,10 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/ryujin-xd/free-rdp/master/loop.bat -OutFile loop.bat
     - name: Download Launcher.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/ryujin-xd/free-rdp/master/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/ryujin-xd/free-rdp/master/VisualStudio2019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/ryujin-xd/free-rdp/master/launcher/adityardp.exe -OutFile adityardp.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/ryujin-xd/free-rdp/master/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/ryujin-xd/free-rdp/master/launcher/GantiPassword.exe -OutFile GantiPassword.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/ryujin-xd/free-rdp/master/launcher/VisualStudio2019.lnk -OutFile "Visual Studio 2019.lnk"
     - name: Extracting Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect To Account Ngrok.
